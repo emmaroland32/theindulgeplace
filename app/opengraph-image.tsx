@@ -29,21 +29,21 @@ export default async function Image() {
           style={{
             position: 'absolute',
             inset: '24px',
-            border: '1px solid rgba(212,175,55,0.25)',
+            border: '1px solid rgba(204,153,51,0.30)',
           }}
         />
-        {/* Inner subtle border */}
+        {/* Inner wine accent border */}
         <div
           style={{
             position: 'absolute',
             inset: '32px',
-            border: '1px solid rgba(212,175,55,0.1)',
+            border: '1px solid rgba(114,47,55,0.20)',
           }}
         />
 
-        {/* Logo crest */}
+        {/* Logo crest — new 480×410 ratio */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={logoSrc} width={150} height={126} alt="" />
+        <img src={logoSrc} width={150} height={128} alt="" />
 
         {/* Wordmark */}
         <div
@@ -56,7 +56,7 @@ export default async function Image() {
         >
           <div
             style={{
-              color: '#d4af37',
+              color: '#CC9933',
               fontSize: '52px',
               fontWeight: '700',
               letterSpacing: '0.12em',
@@ -67,7 +67,7 @@ export default async function Image() {
           </div>
           <div
             style={{
-              color: 'rgba(245,245,220,0.55)',
+              color: 'rgba(237,232,224,0.55)',
               fontSize: '22px',
               fontWeight: '300',
               letterSpacing: '0.08em',
@@ -82,7 +82,7 @@ export default async function Image() {
           style={{
             position: 'absolute',
             bottom: '52px',
-            color: 'rgba(212,175,55,0.4)',
+            color: 'rgba(204,153,51,0.45)',
             fontSize: '14px',
             letterSpacing: '0.25em',
             textTransform: 'uppercase',

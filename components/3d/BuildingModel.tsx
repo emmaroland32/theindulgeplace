@@ -49,7 +49,7 @@ export function BuildingModel({ onFloorSelect }: BuildingModelProps) {
         <mesh position={[0, 2, 0]} receiveShadow castShadow>
           <boxGeometry args={[15, 4, 20]} />
           <meshStandardMaterial 
-            color={hoveredFloor === 'ground' ? "#d4af37" : "#2a2a2a"} 
+            color={hoveredFloor === 'ground' ? "#CC9933" : "#2a2a2a"} 
             transparent 
             opacity={0.9} 
           />
@@ -77,7 +77,7 @@ export function BuildingModel({ onFloorSelect }: BuildingModelProps) {
         <mesh position={[0, 2, 0]} receiveShadow castShadow>
           <boxGeometry args={[15, 4, 20]} />
           <meshStandardMaterial 
-            color={hoveredFloor === 'first' ? "#d4af37" : "#3a3a3a"} 
+            color={hoveredFloor === 'first' ? "#CC9933" : "#3a3a3a"} 
             transparent 
             opacity={0.9} 
           />

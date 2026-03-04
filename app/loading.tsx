@@ -10,7 +10,7 @@ export default function Loading() {
           src="/images/logo-gold.png"
           alt="The Indulge Place"
           width={100}
-          height={84}
+          height={85}
           className="animate-pulse opacity-70"
         />
       </div>

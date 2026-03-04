@@ -31,7 +31,7 @@ export function Footer() {
             src="/images/logo-gold.png"
             alt="The Indulge Place"
             width={120}
-            height={101}
+            height={103}
             className="mb-1"
           />
           <p className="text-sm leading-relaxed">

@@ -12,7 +12,7 @@ export default function NotFound() {
             src="/images/logo-gold.png"
             alt="The Indulge Place"
             width={80}
-            height={67}
+            height={68}
           />
         </div>
         <p className="text-gold uppercase tracking-widest text-sm font-medium mb-4">404</p>

@@ -2,9 +2,10 @@
 
 @theme {
   --color-charcoal: #1a1a1a;
-  --color-gold: #d4af37;
-  --color-beige: #f5f5dc;
-  --color-accent: #d4af37;
+  --color-gold: #CC9933;
+  --color-beige: #EDE8E0;
+  --color-wine: #722F37;
+  --color-accent: #CC9933;
   --color-accent-foreground: #1a1a1a;
 
   --font-display: var(--font-playfair), serif;
@@ -27,7 +28,7 @@
 /* Custom Utilities */
 @layer utilities {
   .text-shadow-gold {
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    text-shadow: 0 0 10px rgba(204, 153, 51, 0.5);
   }
 
   /* Applied by CustomCursor on non-touch devices */

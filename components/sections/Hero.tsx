@@ -45,7 +45,7 @@ export function Hero() {
             src="/images/logo-white.png"
             alt="The Indulge Place crest"
             width={110}
-            height={92}
+            height={94}
             className="drop-shadow-2xl mx-auto"
             priority
           />
