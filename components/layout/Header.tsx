@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -31,6 +32,13 @@ export function Header() {
   }, []);
 
   return (
+    <>
+      <a
+        href="#main-content"
+        className="fixed top-3 left-3 z-[100] -translate-y-16 focus:translate-y-0 transition-transform duration-200 bg-gold text-charcoal text-sm font-semibold px-4 py-2 rounded-md shadow-lg"
+      >
+        Skip to main content
+      </a>
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
@@ -38,8 +46,18 @@ export function Header() {
       )}
     >
       <Container className="flex items-center justify-between">
-        <Link href="/" className="text-2xl font-display font-bold text-gold tracking-wider">
-          THE INDULGE PLACE
+        <Link href="/" className="flex items-center gap-3 group">
+          <Image
+            src="/images/logo-gold.png"
+            alt="The Indulge Place"
+            width={52}
+            height={44}
+            priority
+            className="transition-transform duration-300 group-hover:scale-105"
+          />
+          <span className="font-display text-xl font-bold text-gold tracking-wider hidden sm:block">
+            THE INDULGE PLACE
+          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -99,5 +117,6 @@ export function Header() {
         )}
       </AnimatePresence>
     </header>
+    </>
   );
 }

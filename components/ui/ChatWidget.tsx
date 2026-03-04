@@ -68,7 +68,7 @@ export function ChatWidget() {
     } catch {
       setMessages([
         ...history,
-        { role: 'assistant', content: "I apologise — I'm momentarily unavailable. Please contact us directly at info@theindulgeplace.com or call +27 11 123 4567." },
+        { role: 'assistant', content: "I apologise — I'm momentarily unavailable. Please contact us directly at info@theindulgeplace.com or call +234 812 000 0000." },
       ]);
     } finally {
       setLoading(false);

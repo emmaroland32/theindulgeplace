@@ -104,7 +104,7 @@ export function ContactForm() {
             type="tel"
             value={form.phone}
             onChange={handleChange}
-            placeholder="+27 ..."
+            placeholder="+234 ..."
             className="bg-white/5 border border-white/10 rounded-md px-4 py-3 text-sm text-beige focus:outline-none focus:border-gold transition-colors"
           />
         </div>

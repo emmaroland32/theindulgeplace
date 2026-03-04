@@ -2,7 +2,7 @@ import { ExploreClient } from '@/components/sections/ExploreView';
 
 export const metadata = {
   title: 'Explore The Architecture',
-  description: 'Interactive 3D tour of The Indulge Place — explore every floor of our landmark venue in Sandton, Johannesburg.',
+  description: 'Interactive 3D tour of The Indulge Place — explore every floor of our landmark venue in Ogudu, Lagos.',
   openGraph: {
     title: 'Interactive 3D Tour | The Indulge Place',
     description: 'Explore our multi-level luxury venue in an immersive 3D experience.',

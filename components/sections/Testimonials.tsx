@@ -10,25 +10,25 @@ const TESTIMONIALS = [
   {
     quote: "An experience that transcends dining. BkCooks delivered an evening I'll speak of for years — the Jollof-Braised Short Rib alone is worth the visit.",
     name: 'Sipho Mokoena',
-    title: 'Executive Director, Johannesburg',
+    title: 'Executive Director, Lagos',
     rating: 5,
   },
   {
     quote: "We hosted our entire board retreat in The Boardroom. The AV setup, the concierge service, the private dining — it was flawless. Our team is still talking about it.",
     name: 'Amara Okafor',
-    title: 'CEO, Lagos & Joburg',
+    title: 'CEO, Lagos',
     rating: 5,
   },
   {
     quote: "The Lounge created the most intimate atmosphere for our anniversary. Every detail was curated to perfection. The Indulge Place is in a class of its own.",
     name: 'Lerato & Ndaba Dlamini',
-    title: 'Sandton',
+    title: 'Lagos',
     rating: 5,
   },
   {
     quote: "I've dined at the finest restaurants across three continents. BkCooks' fusion of Nigerian heritage with modern technique is genuinely world-class.",
     name: 'Dr. Farai Ncube',
-    title: 'Harare & Sandton',
+    title: 'Harare & Lagos',
     rating: 5,
   },
 ];

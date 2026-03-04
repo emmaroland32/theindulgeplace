@@ -9,7 +9,7 @@ export const metadata = {
   description: 'Reserve a table at BkCooks, inquire about The Boardroom or The Lounge, or send a general enquiry to The Indulge Place.',
   openGraph: {
     title: 'Contact & Reservations | The Indulge Place',
-    description: 'Reserve a table or event space at The Indulge Place, Sandton.',
+    description: 'Reserve a table or event space at The Indulge Place, Ogudu, Lagos.',
     images: [{ url: '/images/exterior.png', width: 1200, height: 630, alt: 'The Indulge Place' }],
   },
 };
@@ -42,8 +42,8 @@ export default function ContactPage() {
                 <li className="flex items-start gap-4">
                   <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-beige/90">123 Luxury Avenue</p>
-                    <p className="text-beige/60">Sandton, Johannesburg</p>
+                    <p className="text-beige/90">24, Gerrad Street</p>
+                    <p className="text-beige/60">Ogudu, Lagos</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -55,8 +55,8 @@ export default function ContactPage() {
                 </li>
                 <li className="flex items-start gap-4">
                   <Phone className="w-5 h-5 text-gold shrink-0 mt-0.5" />
-                  <a href="tel:+27111234567" className="text-beige/90 hover:text-gold transition-colors">
-                    +27 11 123 4567
+                  <a href="tel:+2348120000000" className="text-beige/90 hover:text-gold transition-colors">
+                    +234 812 000 0000
                   </a>
                 </li>
                 <li className="flex items-start gap-4">
@@ -70,7 +70,7 @@ export default function ContactPage() {
 
             <div className="w-full h-52 rounded-lg overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-500">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.75438848796!2d28.047306!3d-26.107567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9dfe5ce071d!2sSandton%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1645564800000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.578!2d3.3773!3d6.5881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d3bc5c53a27%3A0x7c3d5bae4d2c82c6!2sOgudu%2C+Lagos!5e0!3m2!1sen!2sng!4v1645564800000!5m2!1sen!2sng"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

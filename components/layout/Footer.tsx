@@ -5,6 +5,7 @@ import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
 
 export function Footer() {
   const [email, setEmail] = useState('');
@@ -26,7 +27,13 @@ export function Footer() {
     <footer className="bg-charcoal border-t border-gold/10 py-16 text-beige/80">
       <Container className="grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="space-y-4">
-          <h3 className="font-display text-2xl text-gold">THE INDULGE PLACE</h3>
+          <Image
+            src="/images/logo-gold.png"
+            alt="The Indulge Place"
+            width={120}
+            height={101}
+            className="mb-1"
+          />
           <p className="text-sm leading-relaxed">
             Where Luxury Meets Serenity.<br />
             Experience the finest in relaxation, dining, and events.
@@ -46,10 +53,10 @@ export function Footer() {
         <div>
           <h4 className="font-display text-lg text-gold mb-4">Contact</h4>
           <ul className="space-y-2 text-sm">
-            <li>123 Luxury Avenue</li>
-            <li>Sandton, Johannesburg</li>
+            <li>24, Gerrad Street</li>
+            <li>Ogudu, Lagos</li>
             <li>
-              <a href="tel:+27111234567" className="hover:text-gold transition-colors">+27 11 123 4567</a>
+              <a href="tel:+2348120000000" className="hover:text-gold transition-colors">+234 812 000 0000</a>
             </li>
             <li>
               <a href="mailto:info@theindulgeplace.com" className="hover:text-gold transition-colors">info@theindulgeplace.com</a>

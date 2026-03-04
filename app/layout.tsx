@@ -8,6 +8,7 @@ import { SmoothScroll } from '@/components/layout/SmoothScroll';
 import { CustomCursor } from '@/components/ui/CustomCursor';
 import { ChatWidget } from '@/components/ui/ChatWidget';
 import { PageTransition } from '@/components/layout/PageTransition';
+import { JsonLd } from '@/components/ui/JsonLd';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -27,30 +28,23 @@ export const metadata: Metadata = {
     default: 'The Indulge Place | Luxury Relaxation Hub',
     template: '%s | The Indulge Place',
   },
-  description: 'Where Luxury Meets Serenity. Fine dining at BkCooks, exclusive event spaces, and a world-class architectural experience in Sandton, Johannesburg.',
-  keywords: ['luxury dining', 'fine dining Johannesburg', 'event venue Sandton', 'BkCooks', 'private dining', 'boardroom hire'],
+  description: 'Where Luxury Meets Serenity. Fine dining at BkCooks, exclusive event spaces, and a world-class architectural experience in Ogudu, Lagos, Nigeria.',
+  keywords: ['luxury dining', 'fine dining Lagos', 'event venue Ogudu', 'BkCooks', 'private dining', 'boardroom hire Lagos'],
   authors: [{ name: 'The Indulge Place' }],
   openGraph: {
     type: 'website',
-    locale: 'en_ZA',
+    locale: 'en_NG',
     url: BASE_URL,
     siteName: 'The Indulge Place',
     title: 'The Indulge Place | Luxury Relaxation Hub',
-    description: 'Where Luxury Meets Serenity. Fine dining at BkCooks, exclusive event spaces in Sandton, Johannesburg.',
-    images: [
-      {
-        url: '/images/exterior.png',
-        width: 1200,
-        height: 630,
-        alt: 'The Indulge Place — Luxury Venue, Sandton',
-      },
-    ],
+    description: 'Where Luxury Meets Serenity. Fine dining at BkCooks, exclusive event spaces in Ogudu, Lagos, Nigeria.',
+    // og:image is generated dynamically via app/opengraph-image.tsx
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Indulge Place | Luxury Relaxation Hub',
-    description: 'Fine dining at BkCooks, exclusive event spaces, and architectural luxury in Sandton, Johannesburg.',
-    images: ['/images/exterior.png'],
+    description: 'Fine dining at BkCooks, exclusive event spaces, and architectural luxury in Ogudu, Lagos, Nigeria.',
+    // twitter:image is picked up from opengraph-image.tsx automatically
   },
 };
 
@@ -66,10 +60,41 @@ export default function RootLayout({
         playfair.variable,
         inter.variable
       )}>
+        <JsonLd data={{
+          '@context': 'https://schema.org',
+          '@type': 'LocalBusiness',
+          name: 'The Indulge Place',
+          description: 'Where Luxury Meets Serenity. Fine dining at BkCooks and exclusive event spaces in Ogudu, Lagos, Nigeria.',
+          url: BASE_URL,
+          telephone: '+2348120000000',
+          email: 'info@theindulgeplace.com',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '24, Gerrad Street',
+            addressLocality: 'Ogudu',
+            addressRegion: 'Lagos',
+            addressCountry: 'NG',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 6.5881,
+            longitude: 3.3773,
+          },
+          openingHoursSpecification: {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+            opens: '10:00',
+            closes: '23:00',
+          },
+          image: `${BASE_URL}/images/exterior.png`,
+          priceRange: '$$$$',
+          currenciesAccepted: 'NGN',
+          paymentAccepted: 'Cash, Credit Card',
+        }} />
         <CustomCursor />
         <SmoothScroll>
           <Header />
-          <main className="flex-grow min-h-screen">
+          <main id="main-content" className="flex-grow min-h-screen">
             <PageTransition>
               {children}
             </PageTransition>
